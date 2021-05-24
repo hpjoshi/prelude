@@ -220,9 +220,9 @@
       bookmark-save-flag 1)
 
 ;; projectile is a project management mode
-(require 'projectile)
-(setq projectile-cache-file (expand-file-name  "projectile.cache" prelude-savefile-dir))
-(projectile-mode t)
+;; (require 'projectile)
+;; (setq projectile-cache-file (expand-file-name  "projectile.cache" prelude-savefile-dir))
+;; (projectile-mode t)
 
 ;; avy allows us to effectively navigate to visible things
 (require 'avy)

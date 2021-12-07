@@ -47,3 +47,19 @@
 ;;revert windows on exit - needs winner mode
 (winner-mode)
 (add-hook 'ediff-after-quit-hook-internal 'winner-undo)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; half-page scrolling                                                    ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun previous-multilines ()
+  "scroll down multiple lines"
+  (interactive)
+  (scroll-down (/ (window-body-height) 3)))
+
+(defun next-multilines ()
+  "scroll up multiple lines"
+  (interactive)
+  (scroll-up (/ (window-body-height) 3)))
+
+(global-set-key "\M-n" 'next-multilines) ;;custom
+(global-set-key "\M-p" 'previous-multilines) ;;custom

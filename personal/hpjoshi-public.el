@@ -15,6 +15,10 @@
 ;; turn-off whitespace error highlighting by default
 (setq prelude-whitespace nil)
 
+;; set default face font to SF Mono
+;;(set-face-attribute 'default t :font "-*-SF Mono-normal-normal-normal-*-12-*-*-*-m-0-iso10646-1"
+(set-face-attribute 'default nil :family "SF Mono")
+
 ;; set tango-dark as the theme
 ;(setq prelude-theme 'tango)
 
